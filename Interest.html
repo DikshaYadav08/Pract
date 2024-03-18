@@ -1,0 +1,20 @@
+<html>
+<body>
+<h1>Compound Interest</h1>
+<input type="text" id="in"><br>
+<input type="text" id="ic">
+<script>
+var p,t,r,i,c,A;
+p=parseInt(prompt("Enter Principal Amount"));
+t=parseInt(prompt("Enter Time(in year)"));
+r=parseInt(prompt("Enter Rate"));
+i=(p*r*t)/100
+A=p*Math.pow((1+r/100),t);
+c=A-p;
+alert("Simple Interest is =" + i);
+document.getElementById("in").value= "Simple Interest is =" + i ;
+alert("Compound Interest is =" + c);
+document.getElementById("ic").value= "Compound Interest is =" + c ;
+</script>
+</body>
+</html>
